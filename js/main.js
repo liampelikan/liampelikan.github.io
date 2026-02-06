@@ -145,3 +145,38 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', 'light');
   }
 });
+
+/* --- TYPEWRITER EFFECT --- */
+const typewriterElement = document.getElementById('typewriter');
+const texts = ["Full-Stack Developer", "Software Engineer", "Problem Solver", "CS Graduate Student"];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 100;
+
+function type() {
+  const currentText = texts[textIndex];
+
+  if (isDeleting) {
+    typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+    typeSpeed = 50;
+  } else {
+    typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+    typeSpeed = 100;
+  }
+
+  if (!isDeleting && charIndex === currentText.length) {
+    isDeleting = true;
+    typeSpeed = 2000; // Pause at end
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    textIndex = (textIndex + 1) % texts.length;
+    typeSpeed = 500; // Pause before new word
+  }
+
+  setTimeout(type, typeSpeed);
+}
+
+document.addEventListener('DOMContentLoaded', type);
