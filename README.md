@@ -37,7 +37,7 @@ If you are forking this repo to build your own portfolio, follow this checklist 
 * **Social Links:** Update `href` links for GitHub, LinkedIn, and Discord in the Header and Footer.
 * **Resume:** Replace `assets/documents/Liam_Pelikan_Resume.pdf` with your own PDF.
 
-### 2. Configure EmailJS (`index.html` & `main.js`) **VERY IMPORTANT**
+### 2. Configure EmailJS (`index.html` & `main.js`) **VERY IMPORTANT I DO NOT WANT YOUR MAIL**
 You have to change this otherwise I will be getting all of your mail:
 *  Sign up at [EmailJS.com](https://www.emailjs.com/).
 *  Create a **Service** (e.g., Gmail) and a **Template**.
@@ -50,4 +50,6 @@ You have to change this otherwise I will be getting all of your mail:
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
     ```
 
+### 3. Configure Google Analytics (`index.html`) **VERY IMPORTANT I DO NOT WANT YOUR ANALYTICS**
+*  In `index.html`, replace both occurrences of `G-XXXXXXXXXX` with your real ID:
 ---
