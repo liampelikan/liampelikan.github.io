@@ -51,5 +51,5 @@ You have to change this otherwise I will be getting all of your mail:
     ```
 
 ### 3. Configure Google Analytics (`index.html`) **VERY IMPORTANT I DO NOT WANT YOUR ANALYTICS**
-*  In `index.html`, replace both occurrences of `G-XXXXXXXXXX` with your real ID:
+*  In `index.html`, replace both occurrences of `G-XXXXXXXXXX` with your Google Analytics ID.
 ---
