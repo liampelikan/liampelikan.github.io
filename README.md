@@ -17,7 +17,8 @@ A responsive, high-performance personal portfolio website designed to showcase s
 ## Tech Stack
 * **Frontend:** HTML5, CSS3, JavaScript
 * **Hosting:** GitHub Pages
-* **Services:** EmailJS
+* **Services:** EmailJS, Google Analytics
+
 
 ---
 
