@@ -404,7 +404,6 @@ hr {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 20px 20px 0 var(--border-main);
-  border: 1px solid var(--border-main);
 }
 
 .about-content {
