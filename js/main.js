@@ -11,9 +11,10 @@ navLinks.forEach(link => {
     e.preventDefault();
     const targetId = link.getAttribute('href').substring(1);
     const targetSection = document.getElementById(targetId);
+    const offset = targetId === 'about' ? 90 : 120;
 
     window.scrollTo({
-      top: targetSection.offsetTop - 120,
+      top: targetSection.offsetTop - offset,
       behavior: 'auto'
     });
 
